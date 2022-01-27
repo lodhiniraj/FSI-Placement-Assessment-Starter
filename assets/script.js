@@ -29,59 +29,22 @@ console.log('Gingerbread + button was clicked!')
 
 
 
+let total = 0;
+let plusButtonId = document.getElementById("add-gb");
 
+plusButtonId.addEventListener('click', function() {
 
+var inc
+total = total + 1    
+    
+    console.log(total)
+    
+   
+document.getElementById("qty-gb").innerHTML = total;
 
-
-// let quantity = document.querySelector('#minus-gb');
-let quantity = 1;
-let gbMinusBtn = document.querySelector('#minus-gb');
-
-gbMinusBtn.addEventListener('click', function() {
-    quantity = quantity + 1;
-    quantityContainer.buttonContainer = `Quantity: ${'qty-gb'}`;
+    
+  
+    quantity = 'quantity' + 1;
+    "GingerbreadContainer".textContent = `Quantity'+1: ${quantity}`;
 });
-
-// let quantity = document.querySelector('#add-cc');
-let chocoletChips = 1;
-let ccPlusBtn = document.querySelector('#add-cc');
-
-ccPlusBtn.addEventListener('click', function() {
-    quantity = quantity + 1;
-    quantityContainer.buttonContainer = `Quantity: ${'qty-cc'}`;
-});
-
-// let quantity = document.querySelector('#minus-cc');
-let chocolateChips = 1;
-let ccMinusBtn = document.querySelector('#minus-cc');
-
-ccMinusBtn.addEventListener('click', function() {
-    quantity = quantity + 1;
-    quantityContainer.buttonContainer = `Quantity: ${'qty-cc'}`;
-});
-
-// let quantity = document.querySelector('#add-sugar');
-let sugarSprinkle = 1;
-let ssPlusBtn = document.querySelector('#add-sugar');
-
-ssPlusBtn.addEventListener('click', function() {
-    quantity = quantity + 1;
-    quantityContainer.buttonContainer = `Quantity: ${'qty-cc'}`;
-});
-
-// let quantity = document.querySelector('#minus-sugar');
-let SugarSprinkle = 1;
-let ssMinusBtn = document.querySelector('#minus-sugar');
-
-ssMinusBtn.addEventListener('click', function() {
-    quantity = quantity + 1;
-    quantityContainer.buttonContainer = `Quantity: ${'qty-cc'}`;
-});
-
-//Total
-
-let totalQuantity
-let Total = ('Gb' + 'Cc' + 'Sugar');
-
-
 
